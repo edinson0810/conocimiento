@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <nav>
         <ul>
             <li><a href="inicio.html">inicio</a></li>
-           <li> <a href="nosotros.html">nosotros</a></li>
+            <li> <a href="nosotros.html">nosotros</a></li>
             <li><a href="portada.html">portada</a></li>
             <li><a href="quejas.html">quejas</a></li>
         </ul>
     </nav>
 </head>
+
 <body>
     <h1>Nosotros</h1>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores nobis pariatur iusto consequatur hic laudantium, autem sequi ratione voluptate sunt amet unde. Mollitia reprehenderit alias recusandae ullam ducimus, excepturi amet, impedit tenetur quas esse fuga. Exercitationem rem aliquid, a at reprehenderit, unde sapiente accusantium natus explicabo, pariatur animi corporis aliquam!
-<form action="" novalidate>
-    <div>
-        <label for="nombre">nombre*</label>
-        <input type="text" placeholder="escriba su nombre" pattern="{a-z Z-A}+" minlength="8" maxlength="10" required>
-    </div>
-<div>
-    <label for="cedula">numero Cedula*</label>
-    <input type="number" placeholder="escriba su numero de cedula" required >
-</div>
-<div>
-    <select name="ciudad" id="ciudad" required>
-        <option value="" >seleccione ciudad</option>
-        <option value="1">ocaña</option>
-        <option value="2">valledupar</option>
-        <option value="3" selected>cucuta</option>
-    </select>
-</div>
-    <div>
-        <h2>Elija su barrio</h2>
-        <label for="barrio" >caracoli</label>
-        <input type="checkbox" checked>
-        <label for="barrio">bucarica</label>
-        <input type="checkbox">
-        <label for="bario">centro</label>
-        <input type="checkbox" >
-</div>
-<div><input type="file" accept=".png .jpg" multiple required></div>
-<div>
-    <label for="sexo" >hombre</label>
-    <input type="radio" name="sexo" id="genero" required checked>
-    <label for="sexo">mujer</label>
-    <input type="radio" name="sexo" id="genero">
-    <label for="sexo">bisexual</label>
-    <input type="radio" name="sexo" id="genero">
-    <label for="sexo">traxsexual</label>
-    <input type="radio" name="sexo" id="genero" >
-</div>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores nobis pariatur iusto consequatur hic laudantium,
+    autem sequi ratione voluptate sunt amet unde. Mollitia reprehenderit alias recusandae ullam ducimus, excepturi amet,
+    impedit tenetur quas esse fuga. Exercitationem rem aliquid, a at reprehenderit, unde sapiente accusantium natus
+    explicabo, pariatur animi corporis aliquam!
+    <form action="">
+        <div>
+            <label for="name">nombre*</label>
+            <input type="text" name="nombre" minlength="5" maxlength="10" required pattern="{a-z Z-A}+">
+        </div>
 
-    <div><button>Enviar</button></div>
-</form>
+<div>
+    <label name="cedula">cedula*</label>
+    <input type="number" required >
+</div>
+<div>
+    <select name="ciudad" id="ciudad">ciudad
+    <option value="">seleccione ciudad</option>
+    <option value="1">cali</option>
+    <option value="2">barranca</option>
+    <option value="3" selected>valle</option>
+</select>
+</div>
+<div>
+    <h1>comida</h1>
+    <label name="comida">perros</label>
+    <input type="checkbox">
+    <label name="comida" >hamburguesa</label>
+    <input type="checkbox" checked>
+    <label name="comida">arepa</label>
+    <input type="checkbox">
+</div>
+<div>
+    <input type="file" accept=".png .jpg" multiple >
+</div>
+<label name="masculino">hombre</label>
+<input type="radio" name="masculino" id="genero" checked>
+<label name="femenino">mujer</label>
+<input type="radio" name="femenino" id="genero" checked>
+<label name="bisexual">bisexual</label>
+<input type="radio" name="bisexual" id="genero">
+<label name="marik">gays</label>
+<input type="radio" name="marik" id="genero">
+
+<div>
+        <button>ENVIAR</button>
+    </div>
+    </form>
 </body>
+
 </html>
